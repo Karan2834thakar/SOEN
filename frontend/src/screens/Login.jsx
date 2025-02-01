@@ -33,8 +33,12 @@ const Login = () => {
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-900">
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+        <div className='bg-gray-900 flex flex-col  '>
+
+            <h1 className='flex p-6 text-3xl text-white items-center justify-center font-semibold'>Unleashing the Power of Organized Project Creation</h1>
+ <div className="min-h-screen flex  items-center justify-center  bg-gray-900 ">
+            
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md absolute">
                 <h2 className="text-2xl font-bold text-white mb-6">Login</h2>
                 <form
                     onSubmit={submitHandler}
@@ -72,6 +76,8 @@ const Login = () => {
                 </p>
             </div>
         </div>
+        </div>
+       
     )
 }
 
