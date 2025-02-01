@@ -17,7 +17,7 @@ const Register = () => {
 
         e.preventDefault()
 
-        axios.post('/users/register', {
+        axios.post('https://soen.onrender.com/users/register', {
             email,
             password
         }).then((res) => {

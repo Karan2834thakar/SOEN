@@ -167,7 +167,7 @@ const Project = () => {
     }, [])
 
     function saveFileTree(ft) {
-        axios.put('/projects/update-file-tree', {
+        axios.put('https://soen.onrender.com/projects/update-file-tree', {
             projectId: project._id,
             fileTree: ft
         }).then(res => {

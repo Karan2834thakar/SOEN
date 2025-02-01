@@ -16,7 +16,7 @@ const Home = () => {
         e.preventDefault()
         console.log({ projectName })
 
-        axios.post('http://localhost:8080/projects/create', {
+        axios.post('https://soen.onrender.com/projects/create', {
             name: projectName,
         })
             .then((res) => {
@@ -29,7 +29,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        axios.get('/projects/all').then((res) => {
+        axios.get('https://soen.onrender.com/projects/all').then((res) => {
             setProject(res.data.projects)
 
         }).catch(err => {
